@@ -1,0 +1,11 @@
+{
+  "parcels" :    [
+        {
+            "name": "Product 1",
+            "img": "#",
+            "price": "1000",
+            "weight": "1",
+            "quantity": "1"
+        }
+    ]
+}

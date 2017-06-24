@@ -1,0 +1,107 @@
+@media only screen and (max-width : 992px) {
+	header, .main, footer {
+		padding-left: 0;
+	}
+}
+
+@media only screen and (min-width: 993px) {
+	.container {
+	    width: 85%;
+	}
+
+}
+
+@media only screen and (max-width: 601px) {
+    .side-nav.fixed {
+        top: 0px;
+    }
+
+    .result-user table {
+        display: none;
+    }
+
+    .result-user .small-screen {
+        display: block;
+    }
+
+    .nav-wrapper img {
+        width: auto;
+        height: 55px;
+    }
+    .user {
+        margin-right: 0px;
+    }
+    .user i {
+        line-height: 55px;
+        height: 55px;
+    }
+    /*.user .collection {
+        top: 48px;
+    }*/
+
+    .head-notofication span {
+        border-bottom: 1px solid #9e9e9e;
+    }
+
+    .notifications .col:nth-of-type(2) {
+        margin-bottom: 10px;
+    }
+
+    .notifications .col:last-of-type {
+        margin-bottom: 10px;
+    }
+
+    .notifications {
+        border-bottom: 1px solid #9e9e9e;
+    }
+}
+
+/*@media only screen and (min-width: 993px) {
+	.row .col.offset-l3 {
+	    margin-left: 25%;
+	}
+}
+
+@media only screen and (min-width: 601px) {
+	.row .col.offset-m1 {
+	    margin-left: 8.33333%;
+	}
+}*/
+
+@media only screen and (max-width: 550px) {
+    .warranty_products .product_row {
+        position: relative;
+    }
+    .warranty_products .main_icon {
+        width: 30%
+    }
+    .warranty_products .product_row .main-data {
+        width: 70%;
+        /*padding-left: 40px;*/
+        border-right: none;
+    }
+    .warranty_products .product_row .status_row {
+        width: 100%;
+    }
+    .warranty_products .product_row .store_icon {
+        padding-left: 32%;
+    }
+    .warranty_products .product_row .store_icon,
+    .warranty_products .product_row .status {
+        /*width: 40%;*/
+        float: left;
+    }
+    .warranty_products .product_row .status {
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+    .warranty_products .product_row .arrow {
+        position: absolute;
+        right: 0;
+        top: 20px;
+    }
+    .newBtnCategory {
+        position: static;
+        margin-bottom: 10px;
+    }
+}

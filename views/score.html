@@ -1,0 +1,22 @@
+<div class="card center">
+    <div class="card-content">
+        <div class="row">
+            <div class="col s12 center"> {{team1}} Vs {{team2}} </div>
+            <div class="col s12 l4"> <img ng-src={{getLogo(team1)}} alt="{{team1}}" /> </div>
+            <div class="col s12 l4">
+                <div>{{getTeamShortName(team1)}} - {{totalRun1}} / {{totalWicket1}}</div>
+                <div>Overs - {{totalOver1}}.{{totalBalls1}}</div>
+                <div ng-show="totalRun2>0">
+                    <div> {{getTeamShortName(team2)}} - {{totalRun2}} / {{totalWicket2}}</div>
+                    <div>Overs - {{totalOver2}}.{{totalBalls2}}</div>
+                </div>
+                <div ng-show="showResult"> {{totalRun1 > totalRun2 ? team1 : team2}} won.</div>
+
+            </div>
+            <div class="col s12 l4"> <img ng-src={{getLogo(team2)}} alt="{{team2}}" /> </div>
+
+
+        </div>
+    </div>
+
+</div>

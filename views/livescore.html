@@ -1,0 +1,23 @@
+<!-- pre loader -->
+<div class="row preloader-row" ng-hide="isLoadedData">
+    <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- pre loader -->
+<div class="row " ng-show="isLoadedData">
+    <div class=" col s12 l12">
+        <score-board>
+        </score-board>
+    </div>
+</div>

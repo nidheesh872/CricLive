@@ -1,0 +1,86 @@
+<!doctype html>
+<html class="no-js" ng-app="iplApp">
+
+<head>
+  <meta charset="utf-8">
+  <title>CricLive</title>
+  <meta name="description" content="CricLive">
+  <meta name="viewport" content="width=device-width">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <!--<link rel="stylesheet" href="bower_components/Materialize/bin/materialize.css" />-->
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+
+
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <!--<link rel="stylesheet" href="styles/main.css">-->
+  <!--<link rel="stylesheet" type="text/css" href="styles/materialize.css">-->
+
+  <!--<link rel="stylesheet" type="text/css" href="styles/resize.css">-->
+  <link rel="stylesheet" type="text/css" href="styles/materialdesignicons.min.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="styles/materialize-tags.min.css" />
+
+  <!--<link rel="stylesheet" type="text/css" href="bower_components/mdi/css/materialdesignicons.min.css" media="all" />-->
+  <link rel="stylesheet" type="text/css" href="styles/material_style.css">
+
+  <!-- endbuild -->
+</head>
+
+<body>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container" style="width:100%;">
+      <a id="logo-container" href="#/home" class="brand-logo">
+        <span class=" main-logo-heading left">IPL CricLive </span> </a>
+      <!--<span class="heading-quote left"> - Live tracking made easy!</span>-->
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#/home">Home</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#/home">Home</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="row">
+    <div class="col s12  grey lighten-3 main-content" ng-view></div>
+    <!--m10 offset-l1 offset-m1 z-depth-2-->
+  </div>
+
+
+
+  <!-- build:js(.) scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <script src="node_modules/papaparse/papaparse.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-animate.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+  <!--<script src="bower_components/angular-cookies/angular-cookies.js"></script>-->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js({.tmp,app}) scripts/scripts.js -->
+  <script src="scripts/app.js"></script>
+  <script src="scripts/matches.js"></script>
+  <script src="scripts/score.js"></script>
+  <script src="scripts/service.js"></script>
+  <script src="scripts/directives.js"></script>
+
+
+  <!-- endbuild -->
+</body>
+
+</html>
